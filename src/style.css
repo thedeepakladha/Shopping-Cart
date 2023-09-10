@@ -1,0 +1,199 @@
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;  
+}
+body{
+    font-family: sans-serif;
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #212529;
+ color: white;
+ padding: 25px 60px;
+ margin-bottom: 30px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+.cart{
+    position: relative;
+    background-color: white;
+    color: #212529;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 5px;
+  
+}
+
+.cartAmount{
+     top: -15px;
+    right: -10px;
+    position: absolute;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+  
+}
+
+/* what is display grid */
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+@media (max-width : 1000px){
+    .shop{
+        grid-template-columns : repeat(2,223px);
+    }
+}
+
+@media (max-width : 500px){
+    .shop{
+        grid-template-columns : repeat(1,223px);
+    }
+}
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+ gap: 15px;
+
+}
+
+.price-quantity{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.bi-dash-lg{
+    color: red;
+}
+
+.bi-plus-lg{
+    color: green;
+}
+
+/* cart button */
+
+.text-center{
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.HomeBtn{
+     background-color: black;
+     color: white;
+     border: none;
+     border-radius: 6px;
+     padding: 6px;
+     margin-top: 10px;
+     cursor: pointer;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/* Style rules for shopping cart */
+
+.shopping-cart{
+        display: grid;
+        grid-template-columns: repeat(1,320px);
+        justify-content: center;
+        gap: 10px;
+}
+
+/* Style rules for particular cart item */
+
+.cart-item{
+
+         border: 2px solid black;
+         border-radius: 5px;
+         display: flex;
+}
+
+.details{
+    padding-top: 9px;
+    padding-left: 12px;
+
+} 
+.title-price-x{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+   padding-right: 2px;
+}
+
+.title-price{
+    display: flex;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+.checkout{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.removeAll{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
